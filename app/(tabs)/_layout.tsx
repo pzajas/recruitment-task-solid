@@ -1,5 +1,3 @@
-import { HapticTab } from '@/components/HapticTab'
-import TabBarBackground from '@/components/ui/TabBarBackground'
 import { palette } from '@/src/theme/palette'
 import { Tabs } from 'expo-router'
 import { Platform } from 'react-native'
@@ -12,8 +10,6 @@ export default function TabLayout() {
         tabBarActiveTintColor: palette.colors.blue.dark,
         tabBarInactiveTintColor: palette.colors.white,
         headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
         tabBarStyle: Platform.select({
           ios: {
             position: 'absolute',
